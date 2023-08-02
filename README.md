@@ -1,7 +1,5 @@
 # CRTP
 
-# CRTP- Hoja de Trucos
-
 # Summary
 * [General](#General)
 * [Domain Enumeration](#Domain-Enumeration)
